@@ -4,7 +4,7 @@
 ## CONFIGURATION
 #####
 
-default_args = ['--no-cache', '-t', 'expanded', '--unix-newlines', '-l', '--debug-info']
+default_args = ['--no-cache', '-t', 'expanded', '--unix-newlines', '-l', '--debug-info', '-E', 'utf-8']
 
 #####
 ## SCRIPT
