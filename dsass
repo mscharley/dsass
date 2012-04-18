@@ -10,6 +10,11 @@ default_args = ['--no-cache', '-t', 'expanded', '--unix-newlines', '-l', '--debu
 ## SCRIPT
 #####
 
+# Check for a common prefix for a Drupal site
+if File.exists? 'src'
+  Dir.chdir('src')
+end
+
 while not File.exists? File.join("modules", "system", "system.info")
   last_pwd = Dir.pwd
   Dir.chdir('..')
