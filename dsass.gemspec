@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'dsass'
-  s.version = '1.0.2'
+  s.version = IO.read('VERSION').chomp
   s.date = '2012-06-08'
   s.summary = 'SASS runner for Drupal'
   s.description = 'Provides the dsass command to run sass --watch on all themes in a Drupal installation which support SASS.'
